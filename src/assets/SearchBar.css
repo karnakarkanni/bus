@@ -1,0 +1,196 @@
+/* Error message styling */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    animation: slideDown 0.5s ease-in;
+}
+
+/* General body styling for centering */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #070208;
+}
+
+/* Main container for the search bar */
+.search-bar-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Autosuggest input */
+.react-autosuggest__container {
+    position: relative;
+    width: 100%;
+}
+
+.react-autosuggest__input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark font for readability */
+}
+
+.react-autosuggest__input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slight zoom-in on focus */
+}
+
+/* Suggestions dropdown styling */
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease-in;
+    background-color: #ffffff; /* Light background */
+}
+
+/* Suggestions list */
+.react-autosuggest__suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Suggestion item styling */
+.react-autosuggest__suggestion {
+    padding: 12px;
+    font-size: 14px; /* Smaller font for suggestions */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    color: #333; /* Dark font for readability */
+}
+
+.react-autosuggest__suggestion:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02); /* Slight zoom-in on hover */
+}
+
+/* Highlighted suggestion styling */
+.react-autosuggest__suggestion--highlighted {
+    background-color: #e6f7ff;
+}
+
+/* Category tag inside suggestions */
+.category-tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    animation: slideIn 0.5s ease-in;
+}
+
+/* Category dropdown wrapper styling */
+.category-dropdown {
+    width: 100%;
+    margin-top: 15px; /* Add space between the input field and dropdown */
+}
+
+/* React-select input control styles */
+.css-1s2u09g-control {
+    padding: 8px;
+    height: auto;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Light background for the control */
+    border-radius: 5px;
+    border-color: #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+.css-1pahdxg-control {
+    border-color: #4d90fe !important;
+    box-shadow: 0 0 4px rgba(77, 144, 254, 0.8) !important;
+}
+
+/* React-select dropdown menu */
+.css-4ljt47-MenuList {
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* React-select dropdown item hover effect */
+.css-yt9ioa-option {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.css-yt9ioa-option:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px); /* Slide slightly to the right */
+}
+
+/* React-select selected item styling */
+.css-1uccc91-singleValue {
+    font-size: 14px;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
